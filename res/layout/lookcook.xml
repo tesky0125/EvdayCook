@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/body_blue">
+	<ListView android:id="@+id/lv_cook" android:layout_width="fill_parent"
+		style="@style/style_list_item" android:layout_margin="10dp"
+		android:layout_height="wrap_content"></ListView>
+	<RelativeLayout android:layout_alignParentBottom="true"
+		android:visibility="invisible" android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:id="@+id/layout_addcook"
+		android:layout_alignLeft="@+id/lv_cook" android:layout_alignRight="@+id/lv_cook"
+		android:layout_marginBottom="10dp">
+
+		<EditText android:layout_height="wrap_content" android:id="@+id/text_add"
+			android:hint="@string/text_add_hint" android:layout_alignParentTop="true"
+			android:layout_alignLeft="@+id/layout_addcook" android:layout_width="150dp"
+			android:background="@drawable/text_search"></EditText>
+		<Button android:id="@+id/btn_type" android:layout_height="wrap_content"
+			android:background="@drawable/text_search_mid"
+			android:layout_alignParentTop="true" android:layout_toRightOf="@+id/text_add"
+			android:layout_width="90dp"></Button>
+		<Button android:layout_height="wrap_content" android:text="@string/btn_add"
+			android:id="@+id/btn_add" android:layout_alignParentTop="true"
+			android:layout_toRightOf="@+id/btn_type"
+			android:layout_alignBottom="@+id/btn_type" android:background="@drawable/text_search_right"
+			android:layout_width="60dp" android:layout_alignRight="@+id/layout_addcook"></Button>
+		<TextView android:layout_width="wrap_content" android:text="@string/btn_add"
+			android:layout_alignParentRight="true" android:id="@+id/nocontent"
+			android:layout_height="wrap_content" android:layout_alignTop="@+id/btn_add"
+			android:layout_alignBottom="@+id/btn_add" android:padding="10dp"
+			style="@style/style_time" android:layout_marginRight="10dp"></TextView>
+		<TextView android:layout_width="wrap_content" android:text="@string/btn_sel"
+			android:layout_toRightOf="@+id/text_add" android:id="@+id/tv_type"
+			android:layout_height="wrap_content" android:layout_alignTop="@+id/btn_type"
+			android:layout_alignBottom="@+id/btn_type" android:padding="10dp"
+			style="@style/style_time" android:layout_marginLeft="20dp"></TextView>
+
+	</RelativeLayout>
+</RelativeLayout>

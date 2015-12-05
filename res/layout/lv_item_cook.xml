@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<RelativeLayout android:layout_height="wrap_content"
+		android:id="@+id/layout_lv_item" android:layout_width="fill_parent">
+		<TextView android:layout_width="120dp" android:layout_height="wrap_content"
+			android:id="@+id/tv_title" android:text="TextView"
+			android:layout_alignParentTop="true" android:layout_marginLeft="5dp"
+			android:layout_marginTop="5dp" android:singleLine="true"
+			style="@style/style_title"></TextView>
+		<!-- 
+		<Button android:id="@+id/button1" android:layout_width="15dp"
+			android:layout_toRightOf="@+id/tv_title" android:layout_height="15dp"
+			android:text="" android:layout_alignTop="@+id/tv_title" 
+			android:background="@drawable/favor" android:layout_marginTop="8dp"></Button>
+			 -->
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/tv_counts"
+			android:layout_alignParentRight="true" android:layout_below="@+id/tv_title"
+			android:text="TextView" android:layout_marginRight="30dp"
+			style="@style/style_time"></TextView>
+		<TextView android:layout_toLeftOf="@+id/tv_counts"
+			android:layout_height="wrap_content" android:text="@string/text_counts"
+			android:layout_width="wrap_content" style="@style/style_time"
+			android:layout_alignTop="@+id/tv_counts" android:layout_alignBottom="@+id/tv_counts"></TextView>
+	</RelativeLayout>
+</LinearLayout>

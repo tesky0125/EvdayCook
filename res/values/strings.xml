@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, EvdayCookAct!</string>
+    <string name="app_name">EvdayCook</string>
+    <string name="btn_randcook">随机点餐</string>
+    <string name="menuitem_setcook">设置菜谱</string>
+    <string name="btn_randcookagain">再来一次</string>
+    <string name="btn_randcookpro">OK!今天就这个了。</string>
+    <string name="menuitem_lookcook">浏览菜谱</string>
+    <string name="btn_addcook">增加菜谱</string>
+    <string name="btn_delcook">删除菜谱</string>
+    <string name="text_add_hint">输入菜名</string>
+    <string name="btn_sel">类别</string>
+    <string name="btn_add">增加</string>
+    <string name="text_counts">点菜次数：</string>
+    <string name="menuitem_exit">退出</string>
+</resources>

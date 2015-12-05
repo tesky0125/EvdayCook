@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:gravity="center"
+	android:background="@drawable/body_blue">
+	<Button android:background="@drawable/list_above_nor"
+		android:layout_width="250dp" android:layout_height="wrap_content"
+		android:layout_alignParentTop="true" android:text="@string/btn_randcook"
+		android:id="@+id/btn_randcook" style="@style/style_title"></Button>
+	<Button android:background="@drawable/list_below_nor"
+		android:layout_height="wrap_content" android:layout_below="@+id/btn_randcook"
+		android:text="@string/menuitem_lookcook" android:layout_width="wrap_content"
+		android:id="@+id/btn_lookcook" android:layout_alignLeft="@+id/btn_randcook"
+		android:layout_alignRight="@+id/btn_randcook" style="@style/style_title"></Button>
+	<ListView android:layout_height="wrap_content" android:id="@+id/lv_order"
+		style="@style/style_list_item" android:visibility="invisible"
+		android:layout_width="fill_parent" android:layout_below="@+id/btn_lookcook"
+		android:layout_alignLeft="@+id/btn_lookcook"
+		android:layout_alignRight="@+id/btn_lookcook" android:background="@drawable/list_item_order"
+		android:layout_marginTop="20dp"
+		android:layout_marginBottom="20dp"></ListView>
+	<Button android:background="@drawable/btn_randcook" android:visibility="invisible"
+		android:layout_height="wrap_content" android:layout_below="@+id/lv_order"
+		android:text="@string/btn_randcookpro" android:layout_width="wrap_content" android:id="@+id/btn_randcookpro"
+		android:layout_alignLeft="@+id/lv_order" android:layout_alignRight="@+id/lv_order"
+		 style="@style/style_title"></Button>
+</RelativeLayout>

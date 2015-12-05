@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- 为所有item指定背景图片选择器/与其他控件原理一致??? android:listSelector="@drawable/list_item_bg_float"
+	<item android:state_window_focused="false" android:drawable="@drawable/ListView没有焦点时的图片背景" />
+	<item android:state_focused="true" android:state_pressed="true"
+		android:drawable="@drawable/ListView获得焦点时单击时的背景图片" />
+	<item android:state_focused="false" android:state_pressed="true"
+		android:drawable="@drawable/ListView无焦点时单击时的背景图片" />
+	<item android:state_selected="true" android:drawable="@drawable/ListView选中时的图片背景" />
+	<item android:state_focused="true" android:drawable="@drawable/ListView获得焦点时的图片背景" />
+ -->
+ 	<item android:state_window_focused="false" android:drawable="@color/transparent" />
+	<item android:state_focused="true" android:state_pressed="true"
+		android:drawable="@color/lightgrey" />
+	<item android:state_focused="false" android:state_pressed="true"
+		android:drawable="@color/lightgrey" />
+	<item android:state_selected="true" android:drawable="@color/lightgrey" />
+	<item android:state_focused="true" android:drawable="@color/lightgrey" />
+</selector> 
